@@ -1,11 +1,11 @@
 import React from "react";
 import Article from "./Article";
 
-function ArticleList({ articles }) {
+function ArticleList({ posts }) {
   return (
     <main>
-      {articles.map((article, index) => (
-        <Article key={`article-${index}`} {...article} />
+      {posts.map((post, id) => (
+        <Article key={id} post={post} />
       ))}
     </main>
   );

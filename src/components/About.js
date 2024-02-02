@@ -1,13 +1,10 @@
 import React from "react";
 
-function About() {
-  const imageSrc = "https://via.placeholder.com/215";
-  const aboutText = "Your blog description goes here.";
-
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
     <aside>
-      <img src={imageSrc} alt="blog logo" />
-      <p>{aboutText}</p>
+      <img src={image} alt="blog logo" />
+      <p>{about}</p>
     </aside>
   );
 }
